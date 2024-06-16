@@ -2,78 +2,114 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.container{
+.main{
     width: 100%;
-    min-height: 100vh;
-    padding: 20px 40px;
-    background-image: url(img/tree.jpg);
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%),url(img/tree.jpg) ;
     background-position: center;
     background-size: cover;
+    height: 100vh;
 }
-nav{
-    display: flex;
-    
+.navbar{
+    /* border: 1px solid red; */
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    margin-bottom: 90px;
 }
-h1{
-    font-size:40px ;
-    color: orange;
+.icon{
+    /* border: 1px solid red; */
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+.logo{
+    color: #ff7200;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+.menu{
+    /* border: 1px solid pink; */
+    width: 400px;
+    float: left;
+    height: 70px;
+
+}
+ul{
+float: left;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-nav ul li a:hover{
-    color: orange;
+ul li{
+    list-style: none;
+    margin-left:  62px;
+    margin-top: 27px;
+    font-size: 14px;
 }
-
-nav ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin: 20px 50px;
-    justify-content: space-between;
-    font-size: 17px;
-}
-
-nav ul li a{
-    width: 90%;
+ul li a{
     text-decoration: none;
-    color:white;
-    font-weight: 600;
-}
-label:not([class]){
-    display: block;
-    font-weight: bold; 
-    
-}
-.search input[type=text]{
-    width: 220px;
-    height: 45px;
-    padding: 10px;
-    background-color: transparent;
     color: white;
-    border-radius: 10px 0 0 10px;
-    border: 0.2px solid rgba(255, 165, 0, 0.5);
-    
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
 }
-button[type=search]{
-    width: 100px;
-    height: 45px;
-    background-color: orange;
-    color: rgb(243, 237, 237);
-    font-size: 400;
-    margin-left: -6px;
-    border-radius:  0 10px 10px 0;
-    border: 1px solid orange;
+ul li a:hover{
+    color: #ff7200;
 }
 .search{
-    margin-top: 12px;
-    height: 80px;
-    
+    /* border: 1px solid green; */
+    width: 300px;
+    float: left;
+    margin-left: 270px; 
+}
+.see{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    float:left;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background-color: #ff7200;
+    margin-top: 13px;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.see:focus{
+    outline: none;
 }
 .body{
-    margin-top: 50px;
-    width: 100%;
+    margin-top: 90px;
+    /* margin: auto; */
+    width: 1200px;
     height: 400px;
     display: flex;
+    /* border: 1px solid red; */
+    gap: 60px;
+}
+.left{
+    width: 550px;
+    height: 350px;
+    margin-left: 140px;
 }
 .left h3{
     font-size: 45px;
@@ -83,7 +119,7 @@ button[type=search]{
 .left h2{
     font-size: 55px;
     font-family: 'Times New Roman', Times, serif;
-    color: orange;
+    color:  #ff7200;
 }
 .left p{
     color: #ffff;
@@ -93,7 +129,7 @@ button[type=search]{
 .left>button{
     width: 180px;
     height: 45px;
-    background-color: orange;
+    background-color:  #ff7200;
     color:  black;
     font-size: 19px;
     font-weight: bold;
@@ -104,16 +140,17 @@ button[type=search]{
     background: rgba(8, 6, 6, 0.8);
     margin-left: 500px;
     padding:20px;
-    width: 19%;
+    width: 300px;
     height: 380px;
     border-radius: 12px;
+    
 }
 .right>h2{
     width:200px;
     height: 35px;
     border-radius: 12px;
     background-color: white;
-    color: orange;
+    color:  #ff7200;
     font-size: 20px;
     text-align: center; 
 
@@ -123,7 +160,7 @@ button[type=search]{
     height: 40px;
     width: 200px;
     border: none;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid  #ff7200;
     margin: 25px 0 25px 0;
     outline: none; 
     background-color: transparent;
@@ -133,7 +170,7 @@ button[type=search]{
 .right button{
     height: 40px;
     width:200px;
-    background-color: orange;
+    background-color:  #ff7200;
     color: rgb(10, 10, 10);
     font-size: 17px;
     font-weight: bold;
@@ -151,7 +188,7 @@ button[type=search]{
 }
 .right h4 a{
     text-decoration: none;
-    color: orange;
+    color:  #ff7200;
 }
 .right p{
     font-size: 13px;
